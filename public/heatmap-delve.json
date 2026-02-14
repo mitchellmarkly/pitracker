@@ -1,0 +1,5282 @@
+{
+  "schemaVersion": 1,
+  "kind": "pi-heatmap",
+  "region": "Delve",
+  "generatedAt": "2026-02-01T05:40:37Z",
+  "resources": [
+    "Bacteria",
+    "Biofuels",
+    "Biomass",
+    "Chiral Structures",
+    "Electrolytes",
+    "Industrial Fibers",
+    "Oxidizing Compound",
+    "Oxygen",
+    "Plasmoids",
+    "Precious Metals",
+    "Proteins",
+    "Reactive Metals",
+    "Silicon",
+    "Toxic Metals",
+    "Water",
+    "Density"
+  ],
+  "scans": [
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.4
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.24
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.96
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.76
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.34
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.72
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.43
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.4
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.83
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.73
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.41
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.21
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P6",
+      "PlanetType": "Ice",
+      "Resource": "Bacteria",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P6",
+      "PlanetType": "Ice",
+      "Resource": "Biomass",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P6",
+      "PlanetType": "Ice",
+      "Resource": "Oxygen",
+      "Value": 0.39
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P6",
+      "PlanetType": "Ice",
+      "Resource": "Toxic Metals",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "ZXB-VC",
+      "Planet": "P6",
+      "PlanetType": "Ice",
+      "Resource": "Water",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Electrolytes",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.41
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.31
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.82
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.73
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.43
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.05
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P3",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.84
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.35
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.27
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.73
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Proteins",
+      "Value": 0.17
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.87
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.71
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.46
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P7",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P7",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P7",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P7",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P7",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.43
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.31
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P10",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P10",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.74
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P10",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P10",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "5-CQDA",
+      "Planet": "P10",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.32
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.78
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.35
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.75
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.32
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.7
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Electrolytes",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.41
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.36
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.71
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.74
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.27
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.7
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.72
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.73
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.36
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.7
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.72
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.42
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.71
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "S-6HHN",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.42
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.35
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.09
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.91
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.41
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.93
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.82
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.76
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.73
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P4",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P4",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.46
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P4",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.39
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P4",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.22
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P4",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.83
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.36
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.28
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.4
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Bacteria",
+      "Value": 0.49
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Biomass",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Oxygen",
+      "Value": 0.38
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Toxic Metals",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Water",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P11",
+      "PlanetType": "Oceanic",
+      "Resource": "Bacteria",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P11",
+      "PlanetType": "Oceanic",
+      "Resource": "Biofuels",
+      "Value": 0.75
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P11",
+      "PlanetType": "Oceanic",
+      "Resource": "Biomass",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P11",
+      "PlanetType": "Oceanic",
+      "Resource": "Proteins",
+      "Value": 0.18
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "I-E3TG",
+      "Planet": "P11",
+      "PlanetType": "Oceanic",
+      "Resource": "Water",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.72
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.31
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.7
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Proteins",
+      "Value": 0.35
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.43
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.7
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.74
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.72
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.32
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.31
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.49
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.41
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "M2-XFE",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.72
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.46
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.26
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.43
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.35
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.05
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.78
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.4
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.45
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.72
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.2
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Proteins",
+      "Value": 0.13
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.94
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.42
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.26
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.18
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.21
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.34
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Bacteria",
+      "Value": 0.4
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Biomass",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Oxygen",
+      "Value": 0.36
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Toxic Metals",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "NJU-QV",
+      "System": "KEE-N6",
+      "Planet": "P10",
+      "PlanetType": "Ice",
+      "Resource": "Water",
+      "Value": 0.94
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.38
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.28
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.74
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.41
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.28
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.44
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P6",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P6",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P6",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P6",
+      "PlanetType": "Temperate",
+      "Resource": "Proteins",
+      "Value": 0.18
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P6",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.85
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P7",
+      "PlanetType": "Oceanic",
+      "Resource": "Bacteria",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P7",
+      "PlanetType": "Oceanic",
+      "Resource": "Biofuels",
+      "Value": 0.73
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P7",
+      "PlanetType": "Oceanic",
+      "Resource": "Biomass",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P7",
+      "PlanetType": "Oceanic",
+      "Resource": "Proteins",
+      "Value": 0.11
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P7",
+      "PlanetType": "Oceanic",
+      "Resource": "Water",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P8",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P8",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.71
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P8",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P8",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P8",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.28
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.18
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.46
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.35
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.45
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P11",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P11",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P11",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P11",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P11",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.45
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.39
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.38
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.84
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.75
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "4X0-0b",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.71
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.31
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.31
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.36
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P2",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.38
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.35
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.38
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.85
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.77
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P5",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.78
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P6",
+      "PlanetType": "Oceanic",
+      "Resource": "Bacteria",
+      "Value": 0.97
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P6",
+      "PlanetType": "Oceanic",
+      "Resource": "Biofuels",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P6",
+      "PlanetType": "Oceanic",
+      "Resource": "Biomass",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P6",
+      "PlanetType": "Oceanic",
+      "Resource": "Proteins",
+      "Value": 0.17
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P6",
+      "PlanetType": "Oceanic",
+      "Resource": "Water",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.23
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.44
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.2
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.46
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.18
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P11",
+      "PlanetType": "Ice",
+      "Resource": "Bacteria",
+      "Value": 0.46
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P11",
+      "PlanetType": "Ice",
+      "Resource": "Biomass",
+      "Value": 0.44
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P11",
+      "PlanetType": "Ice",
+      "Resource": "Oxygen",
+      "Value": 0.34
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P11",
+      "PlanetType": "Ice",
+      "Resource": "Toxic Metals",
+      "Value": 0.99
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P11",
+      "PlanetType": "Ice",
+      "Resource": "Water",
+      "Value": 0.93
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.43
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P12",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P13",
+      "PlanetType": "Oceanic",
+      "Resource": "Bacteria",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P13",
+      "PlanetType": "Oceanic",
+      "Resource": "Biofuels",
+      "Value": 0.39
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P13",
+      "PlanetType": "Oceanic",
+      "Resource": "Biomass",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P13",
+      "PlanetType": "Oceanic",
+      "Resource": "Proteins",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "FM-JK5",
+      "Planet": "P13",
+      "PlanetType": "Oceanic",
+      "Resource": "Water",
+      "Value": 0.98
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P1",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P1",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P1",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P1",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P1",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P2",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P2",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.2
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P2",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P2",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P2",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P3",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P3",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.2
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P3",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P3",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P3",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.23
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P4",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P5",
+      "PlanetType": "Ice",
+      "Resource": "Bacteria",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P5",
+      "PlanetType": "Ice",
+      "Resource": "Biomass",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P5",
+      "PlanetType": "Ice",
+      "Resource": "Oxygen",
+      "Value": 0.39
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P5",
+      "PlanetType": "Ice",
+      "Resource": "Toxic Metals",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P5",
+      "PlanetType": "Ice",
+      "Resource": "Water",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.37
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.34
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P7",
+      "PlanetType": "Ice",
+      "Resource": "Bacteria",
+      "Value": 0.44
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P7",
+      "PlanetType": "Ice",
+      "Resource": "Biomass",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P7",
+      "PlanetType": "Ice",
+      "Resource": "Oxygen",
+      "Value": 0.37
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P7",
+      "PlanetType": "Ice",
+      "Resource": "Toxic Metals",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "PDE-U3",
+      "Planet": "P7",
+      "PlanetType": "Ice",
+      "Resource": "Water",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.32
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.31
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.82
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.65
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P4",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.34
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.32
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "JP4-AA",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.46
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.37
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P2",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.8
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.46
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P3",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.42
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.39
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P5",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.28
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.42
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.71
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Proteins",
+      "Value": 0.45
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.37
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P8",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.44
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.34
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P9",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.25
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "23G-XC",
+      "Planet": "P10",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Chiral Structures",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Plasmoids",
+      "Value": 0.52
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Reactive Metals",
+      "Value": 0.42
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Silicon",
+      "Value": 0.37
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P1",
+      "PlanetType": "Lava",
+      "Resource": "Toxic Metals",
+      "Value": 0.7
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P2",
+      "PlanetType": "Plasma",
+      "Resource": "Chiral Structures",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P2",
+      "PlanetType": "Plasma",
+      "Resource": "Plasmoids",
+      "Value": 0.42
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P2",
+      "PlanetType": "Plasma",
+      "Resource": "Precious Metals",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P2",
+      "PlanetType": "Plasma",
+      "Resource": "Reactive Metals",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P2",
+      "PlanetType": "Plasma",
+      "Resource": "Toxic Metals",
+      "Value": 0.49
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.64
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Proteins",
+      "Value": 0.36
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P3",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.76
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.68
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Proteins",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P4",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.2
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.4
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.54
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P5",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.61
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.18
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P6",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.47
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Electrolytes",
+      "Value": 0.58
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxidizing Compound",
+      "Value": 0.28
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Oxygen",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Reactive Metals",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P7",
+      "PlanetType": "Gas",
+      "Resource": "Water",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P8",
+      "PlanetType": "Ice",
+      "Resource": "Bacteria",
+      "Value": 0.49
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P8",
+      "PlanetType": "Ice",
+      "Resource": "Biomass",
+      "Value": 0.44
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P8",
+      "PlanetType": "Ice",
+      "Resource": "Oxygen",
+      "Value": 0.33
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P8",
+      "PlanetType": "Ice",
+      "Resource": "Toxic Metals",
+      "Value": 1.0
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "D-W7F0",
+      "Planet": "P8",
+      "PlanetType": "Ice",
+      "Resource": "Water",
+      "Value": 0.89
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.59
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.63
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.42
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P1",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P2",
+      "PlanetType": "Oceanic",
+      "Resource": "Bacteria",
+      "Value": 0.67
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P2",
+      "PlanetType": "Oceanic",
+      "Resource": "Biofuels",
+      "Value": 0.4
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P2",
+      "PlanetType": "Oceanic",
+      "Resource": "Biomass",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P2",
+      "PlanetType": "Oceanic",
+      "Resource": "Proteins",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P2",
+      "PlanetType": "Oceanic",
+      "Resource": "Water",
+      "Value": 0.99
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Electrolytes",
+      "Value": 0.51
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Oxygen",
+      "Value": 0.6
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Plasmoids",
+      "Value": 0.49
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Reactive Metals",
+      "Value": 0.55
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P3",
+      "PlanetType": "Storm",
+      "Resource": "Water",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.3
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.5
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P4",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.78
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.79
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.69
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Plasmoids",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P5",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.14
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Bacteria",
+      "Value": 0.53
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Biofuels",
+      "Value": 0.66
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Precious Metals",
+      "Value": 0.48
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Reactive Metals",
+      "Value": 0.57
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P6",
+      "PlanetType": "Barren",
+      "Resource": "Water",
+      "Value": 0.29
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Bacteria",
+      "Value": 0.35
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Biofuels",
+      "Value": 0.62
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Industrial Fibers",
+      "Value": 0.56
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Proteins",
+      "Value": 0.23
+    },
+    {
+      "Region": "Delve",
+      "Constellation": "SPNZ-Z",
+      "System": "T5ZI-S",
+      "Planet": "P7",
+      "PlanetType": "Temperate",
+      "Resource": "Water",
+      "Value": 0.68
+    }
+  ]
+}
