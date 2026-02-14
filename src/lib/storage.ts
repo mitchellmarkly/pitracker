@@ -3,6 +3,14 @@ import { n, s, uid } from "./utils";
 import { clampSlots, deriveCharactersFromAssignments, mergeCharacters } from "./characters";
 
 export const LS_KEY = "pi_tracker_state_v1";
+const API_BASE = (import.meta.env.VITE_API_BASE ?? "/api").toString().trim();
+const API_TOKEN = (import.meta.env.VITE_API_TOKEN ?? "").toString().trim();
+
+function apiHeaders(): Record<string, string> {
+  const headers: Record<string, string> = {};
+  if (API_TOKEN) headers["X-Api-Token"] = API_TOKEN;
+  return headers;
+}
 
 export function defaultState(): AppState {
   return { version: 1, characters: [], assignments: [], scans: [], yields: [] };
@@ -18,12 +26,35 @@ export function loadState(): AppState {
   }
 }
 
+export async function hydrateState(): Promise<AppState> {
+  if (!API_BASE) return loadState();
+  try {
+    const res = await fetch(`${API_BASE}/state`, { method: "GET", headers: apiHeaders() });
+    if (!res.ok) throw new Error(`state fetch failed: ${res.status}`);
+    const json = await res.json();
+    const next = normalizeLoadedState(json);
+    localStorage.setItem(LS_KEY, JSON.stringify(next));
+    return next;
+  } catch {
+    return loadState();
+  }
+}
+
 export function saveState(state: AppState) {
   try {
     localStorage.setItem(LS_KEY, JSON.stringify(state));
   } catch {
     // ignore
   }
+
+  if (!API_BASE) return;
+  void fetch(`${API_BASE}/state`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json", ...apiHeaders() },
+    body: JSON.stringify(state),
+  }).catch(() => {
+    // ignore API persistence failures in UI flow
+  });
 }
 
 export function wipeState(): AppState {
@@ -32,6 +63,13 @@ export function wipeState(): AppState {
   } catch {
     // ignore
   }
+
+  if (API_BASE) {
+    void fetch(`${API_BASE}/state`, { method: "DELETE", headers: apiHeaders() }).catch(() => {
+      // ignore
+    });
+  }
+
   return defaultState();
 }
 

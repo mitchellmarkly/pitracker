@@ -3,6 +3,9 @@ import { AppState, Assignment } from "../types";
 import { deriveCharactersFromAssignments } from "./characters";
 import { n, s, uid } from "./utils";
 
+const MAX_XLSX_BYTES = 2 * 1024 * 1024; // 2 MiB
+const MAX_ASSIGNMENT_ROWS = 10_000;
+
 function sheetToRows(wb: XLSX.WorkBook, name: string) {
   const ws = wb.Sheets[name];
   if (!ws) return null;
@@ -40,10 +43,18 @@ function parseAssignments(rows: any[]): Assignment[] {
 }
 
 export async function importAssignmentsXlsx(file: File): Promise<Pick<AppState, "assignments" | "characters">> {
+  if (file.size > MAX_XLSX_BYTES) {
+    throw new Error(`XLSX is too large (${Math.round(file.size / 1024)} KB). Limit is ${Math.round(MAX_XLSX_BYTES / 1024)} KB.`);
+  }
+
   const buf = await file.arrayBuffer();
   const wb = XLSX.read(buf, { type: "array" });
 
   const rows = sheetToRows(wb, "Assignments") ?? sheetToRows(wb, "Used") ?? [];
+  if (rows.length > MAX_ASSIGNMENT_ROWS) {
+    throw new Error(`Too many assignment rows (${rows.length}). Limit is ${MAX_ASSIGNMENT_ROWS}.`);
+  }
+
   const assignments = parseAssignments(rows);
 
   const characters = deriveCharactersFromAssignments(assignments);

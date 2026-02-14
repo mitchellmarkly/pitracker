@@ -1,9 +1,12 @@
 services:
   pi-tracker:
-    image: nginx:alpine
+    build: .
+    container_name: pi-tracker
     ports:
-      - "8080:80"
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - PI_DB_PATH=/data/pi-tracker.db
     volumes:
-      - ./dist:/usr/share/nginx/html:ro
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./data:/data
     restart: unless-stopped

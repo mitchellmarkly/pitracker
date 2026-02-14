@@ -3,7 +3,7 @@ import { AppState, Assignment, CharacterProfile, ScanCell } from "./types";
 import { importAssignmentsXlsx } from "./lib/xlsxImport";
 import { exportHeatmapJson, importHeatmapJson } from "./lib/heatmapJson";
 import { downloadJson, heatColor, n, s, todayISO, uid } from "./lib/utils";
-import { importStateFromJson, loadState, saveState, wipeState } from "./lib/storage";
+import { hydrateState, importStateFromJson, loadState, saveState, wipeState } from "./lib/storage";
 import { parseYieldPaste } from "./lib/yieldParse";
 import HeatmapTab from "./features/HeatmapTab";
 import RecommendationsTab from "./features/RecommendationsTab";
@@ -22,12 +22,30 @@ export default function App() {
   const [tab, setTab] = useState<TabKey>("dashboard");
   const [status, setStatus] = useState<string>("");
   const [err, setErr] = useState<string>("");
+  const [storageReady, setStorageReady] = useState<boolean>(false);
 
   const xlsxRef = useRef<HTMLInputElement | null>(null);
   const heatmapRef = useRef<HTMLInputElement | null>(null);
   const importAllRef = useRef<HTMLInputElement | null>(null);
 
-  useEffect(() => saveState(state), [state]);
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const remote = await hydrateState();
+      if (!cancelled) {
+        setState(remote);
+        setStorageReady(true);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    saveState(state);
+  }, [state, storageReady]);
 
   const regions = useMemo(() => {
     const r = new Set<string>();
