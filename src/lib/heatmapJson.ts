@@ -1,12 +1,22 @@
 import { HeatmapJsonV1, ScanCell } from "../types";
 import { downloadJson, n, s, todayISO, uid } from "./utils";
 
+const MAX_HEATMAP_BYTES = 5 * 1024 * 1024; // 5 MiB
+const MAX_HEATMAP_ROWS = 100_000;
+
 export async function importHeatmapJson(file: File): Promise<{ region: string; scans: ScanCell[] }> {
+  if (file.size > MAX_HEATMAP_BYTES) {
+    throw new Error(`Heatmap JSON is too large (${Math.round(file.size / 1024)} KB). Limit is ${Math.round(MAX_HEATMAP_BYTES / 1024)} KB.`);
+  }
+
   const text = await file.text();
   const obj = JSON.parse(text) as HeatmapJsonV1 | any;
 
   const rawScans: any[] = Array.isArray(obj) ? obj : Array.isArray(obj?.scans) ? obj.scans : [];
   if (!rawScans.length) throw new Error("No scans found in JSON.");
+  if (rawScans.length > MAX_HEATMAP_ROWS) {
+    throw new Error(`Too many heatmap rows (${rawScans.length}). Limit is ${MAX_HEATMAP_ROWS}.`);
+  }
 
   const regionFromFile = s(obj?.region || obj?.Region || rawScans?.[0]?.Region || "Unknown");
 
