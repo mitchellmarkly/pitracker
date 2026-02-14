@@ -66,6 +66,8 @@ means the DB file will appear on the host at:
 
 Below are two good ways to deploy on Unraid. **Option A (Compose Manager)** is usually easiest.
 
+Below are two good ways to deploy on Unraid. **Option A (Compose Manager)** is usually easiest.
+
 ### Prerequisites
 
 1. Unraid server is running and reachable.
@@ -99,6 +101,7 @@ services:
       - PI_DB_PATH=/data/pi-tracker.db  # inside container path
       # Optional: protect /api/* with token auth
       # - PI_API_TOKEN=change-me
+      - PI_DB_PATH=/data/pi-tracker.db
     volumes:
       - /mnt/user/appdata/pi-tracker:/data
     restart: unless-stopped
@@ -149,6 +152,7 @@ If you prefer normal Unraid Docker templates:
 6. Add **Environment Variables**:
    - `PORT=3000`
    - `PI_DB_PATH=/data/pi-tracker.db`  ← this is the **container** path, not host path
+   - `PI_DB_PATH=/data/pi-tracker.db`
 7. Apply and start container.
 8. Open: `http://<UNRAID-IP>:3000`
 

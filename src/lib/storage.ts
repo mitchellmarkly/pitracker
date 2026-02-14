@@ -30,6 +30,7 @@ export async function hydrateState(): Promise<AppState> {
   if (!API_BASE) return loadState();
   try {
     const res = await fetch(`${API_BASE}/state`, { method: "GET", headers: apiHeaders() });
+    const res = await fetch(`${API_BASE}/state`, { method: "GET" });
     if (!res.ok) throw new Error(`state fetch failed: ${res.status}`);
     const json = await res.json();
     const next = normalizeLoadedState(json);
@@ -51,6 +52,7 @@ export function saveState(state: AppState) {
   void fetch(`${API_BASE}/state`, {
     method: "PUT",
     headers: { "Content-Type": "application/json", ...apiHeaders() },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(state),
   }).catch(() => {
     // ignore API persistence failures in UI flow
@@ -66,6 +68,7 @@ export function wipeState(): AppState {
 
   if (API_BASE) {
     void fetch(`${API_BASE}/state`, { method: "DELETE", headers: apiHeaders() }).catch(() => {
+    void fetch(`${API_BASE}/state`, { method: "DELETE" }).catch(() => {
       // ignore
     });
   }

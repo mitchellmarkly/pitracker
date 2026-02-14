@@ -1,5 +1,6 @@
 import { createServer } from "node:http";
 import { existsSync, createReadStream, mkdirSync } from "node:fs";
+import { readFileSync, existsSync, createReadStream, mkdirSync } from "node:fs";
 import { extname, join, normalize } from "node:path";
 import { DatabaseSync } from "node:sqlite";
 
@@ -35,6 +36,7 @@ function writeSecurityHeaders(res) {
 
 function sendJson(res, code, body) {
   writeSecurityHeaders(res);
+function sendJson(res, code, body) {
   res.writeHead(code, { "Content-Type": "application/json; charset=utf-8" });
   res.end(JSON.stringify(body));
 }
@@ -53,6 +55,10 @@ async function readBody(req, limitBytes = BODY_LIMIT_BYTES) {
     chunks.push(buf);
   }
   return Buffer.concat(chunks).toString("utf8");
+async function readBody(req) {
+  let body = "";
+  for await (const chunk of req) body += chunk.toString();
+  return body;
 }
 
 function getContentType(filePath) {
@@ -91,6 +97,14 @@ async function proxyJanice(req, res, path) {
     if (Array.isArray(v)) headers.set(key, v.join(", "));
     else if (typeof v === "string" && v.trim()) headers.set(key, v);
   }
+async function proxyJanice(req, res, path) {
+  const upstream = `https://janice.e-351.com${path.replace(/^\/janice/, "")}`;
+  const headers = new Headers();
+  for (const [k, v] of Object.entries(req.headers)) {
+    if (Array.isArray(v)) headers.set(k, v.join(", "));
+    else if (typeof v === "string") headers.set(k, v);
+  }
+  headers.set("host", "janice.e-351.com");
 
   const method = req.method || "GET";
   const body = method === "GET" || method === "HEAD" ? undefined : await readBody(req);
@@ -117,6 +131,10 @@ async function proxyJanice(req, res, path) {
 
   writeSecurityHeaders(res);
   res.writeHead(upstreamRes.status, outHeaders);
+  const upstreamRes = await fetch(upstream, { method, headers, body });
+  const outHeaders = Object.fromEntries(upstreamRes.headers.entries());
+  res.writeHead(upstreamRes.status, outHeaders);
+  const buf = Buffer.from(await upstreamRes.arrayBuffer());
   res.end(buf);
 }
 
@@ -150,6 +168,7 @@ const server = createServer(async (req, res) => {
     if (url.pathname === "/api/state" && method === "PUT") {
       const raw = await readBody(req);
       const parsed = parseJsonOrNull(raw || "{}");
+      const parsed = JSON.parse(raw || "{}");
       if (!parsed || typeof parsed !== "object") {
         sendJson(res, 400, { error: "Invalid state payload" });
         return;
@@ -184,6 +203,9 @@ const server = createServer(async (req, res) => {
       sendJson(res, 413, { error: "Payload too large" });
       return;
     }
+    res.writeHead(200, { "Content-Type": getContentType(filePath) });
+    createReadStream(filePath).pipe(res);
+  } catch (err) {
     sendJson(res, 500, { error: err instanceof Error ? err.message : "Server error" });
   }
 });
