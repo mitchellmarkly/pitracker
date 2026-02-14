@@ -1,0 +1,129 @@
+import { createServer } from "node:http";
+import { readFileSync, existsSync, createReadStream, mkdirSync } from "node:fs";
+import { extname, join, normalize } from "node:path";
+import { DatabaseSync } from "node:sqlite";
+
+const PORT = Number(process.env.PORT || 3000);
+const STATIC_DIR = process.env.STATIC_DIR || "dist";
+const DB_PATH = process.env.PI_DB_PATH || "/data/pi-tracker.db";
+
+mkdirSync("/data", { recursive: true });
+const db = new DatabaseSync(DB_PATH);
+db.exec(`
+  CREATE TABLE IF NOT EXISTS app_state (
+    id INTEGER PRIMARY KEY CHECK (id = 1),
+    state_json TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+  );
+`);
+
+const defaultState = JSON.stringify({ version: 1, characters: [], assignments: [], scans: [], yields: [] });
+const row = db.prepare("SELECT state_json FROM app_state WHERE id = 1").get();
+if (!row) {
+  db.prepare("INSERT INTO app_state (id, state_json, updated_at) VALUES (1, ?, datetime('now'))").run(defaultState);
+}
+
+function sendJson(res, code, body) {
+  res.writeHead(code, { "Content-Type": "application/json; charset=utf-8" });
+  res.end(JSON.stringify(body));
+}
+
+async function readBody(req) {
+  let body = "";
+  for await (const chunk of req) body += chunk.toString();
+  return body;
+}
+
+function getContentType(filePath) {
+  const ext = extname(filePath).toLowerCase();
+  if (ext === ".html") return "text/html; charset=utf-8";
+  if (ext === ".js") return "application/javascript; charset=utf-8";
+  if (ext === ".css") return "text/css; charset=utf-8";
+  if (ext === ".json") return "application/json; charset=utf-8";
+  if (ext === ".svg") return "image/svg+xml";
+  if (ext === ".png") return "image/png";
+  if (ext === ".jpg" || ext === ".jpeg") return "image/jpeg";
+  return "application/octet-stream";
+}
+
+async function proxyJanice(req, res, path) {
+  const upstream = `https://janice.e-351.com${path.replace(/^\/janice/, "")}`;
+  const headers = new Headers();
+  for (const [k, v] of Object.entries(req.headers)) {
+    if (Array.isArray(v)) headers.set(k, v.join(", "));
+    else if (typeof v === "string") headers.set(k, v);
+  }
+  headers.set("host", "janice.e-351.com");
+
+  const method = req.method || "GET";
+  const body = method === "GET" || method === "HEAD" ? undefined : await readBody(req);
+
+  const upstreamRes = await fetch(upstream, { method, headers, body });
+  const outHeaders = Object.fromEntries(upstreamRes.headers.entries());
+  res.writeHead(upstreamRes.status, outHeaders);
+  const buf = Buffer.from(await upstreamRes.arrayBuffer());
+  res.end(buf);
+}
+
+const server = createServer(async (req, res) => {
+  try {
+    const method = req.method || "GET";
+    const url = new URL(req.url || "/", `http://${req.headers.host || "localhost"}`);
+
+    if (url.pathname.startsWith("/janice/")) {
+      await proxyJanice(req, res, url.pathname + url.search);
+      return;
+    }
+
+    if (url.pathname === "/api/health") {
+      sendJson(res, 200, { ok: true });
+      return;
+    }
+
+    if (url.pathname === "/api/state" && method === "GET") {
+      const row = db.prepare("SELECT state_json, updated_at FROM app_state WHERE id = 1").get();
+      const state = row ? JSON.parse(row.state_json) : JSON.parse(defaultState);
+      sendJson(res, 200, { ...state, _updatedAt: row?.updated_at || null });
+      return;
+    }
+
+    if (url.pathname === "/api/state" && method === "PUT") {
+      const raw = await readBody(req);
+      const parsed = JSON.parse(raw || "{}");
+      if (!parsed || typeof parsed !== "object") {
+        sendJson(res, 400, { error: "Invalid state payload" });
+        return;
+      }
+      db.prepare("INSERT INTO app_state (id, state_json, updated_at) VALUES (1, ?, datetime('now')) ON CONFLICT(id) DO UPDATE SET state_json=excluded.state_json, updated_at=datetime('now')")
+        .run(JSON.stringify(parsed));
+      sendJson(res, 200, { ok: true });
+      return;
+    }
+
+    if (url.pathname === "/api/state" && method === "DELETE") {
+      db.prepare("INSERT INTO app_state (id, state_json, updated_at) VALUES (1, ?, datetime('now')) ON CONFLICT(id) DO UPDATE SET state_json=excluded.state_json, updated_at=datetime('now')")
+        .run(defaultState);
+      sendJson(res, 200, { ok: true });
+      return;
+    }
+
+    const relativePath = url.pathname === "/" ? "/index.html" : url.pathname;
+    const normalized = normalize(relativePath).replace(/^\/+/, "");
+    let filePath = join(STATIC_DIR, normalized);
+    if (!existsSync(filePath)) filePath = join(STATIC_DIR, "index.html");
+    if (!existsSync(filePath)) {
+      sendJson(res, 404, { error: "Not found" });
+      return;
+    }
+
+    res.writeHead(200, { "Content-Type": getContentType(filePath) });
+    createReadStream(filePath).pipe(res);
+  } catch (err) {
+    sendJson(res, 500, { error: err instanceof Error ? err.message : "Server error" });
+  }
+});
+
+server.listen(PORT, () => {
+  console.log(`PI Tracker listening on ${PORT}`);
+  console.log(`DB path: ${DB_PATH}`);
+});

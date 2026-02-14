@@ -83,8 +83,14 @@ export function nextOpenSlot(assignments: Assignment[], characterName: string, s
 }
 
 export function characterHasColonyOnPlanet(assignments: Assignment[], characterName: string, system: string, planet: string): boolean {
-  const sys = system.trim();
-  const pl = planet.trim();
-  if (!characterName.trim() || !sys || !pl) return false;
-  return assignments.some((a) => a.Character === characterName && a.System === sys && a.Planet === pl);
+  const name = characterName.trim().toLocaleLowerCase();
+  const sys = system.trim().toLocaleLowerCase();
+  const pl = planet.trim().toLocaleLowerCase();
+  if (!name || !sys || !pl) return false;
+  return assignments.some(
+    (a) =>
+      a.Character.trim().toLocaleLowerCase() === name &&
+      a.System.trim().toLocaleLowerCase() === sys &&
+      a.Planet.trim().toLocaleLowerCase() === pl
+  );
 }

@@ -1,65 +1,168 @@
-# PI Tracker (local-first)
+# PI Tracker
 
-This is a small Vite + React app to track:
-- character → planet assignments (import from XLSX)
-- scan heatmaps (import from JSON)
-- yield logs over time (paste totals)
+PI Tracker is a Vite + React app for:
+- character → planet assignments (XLSX import)
+- scan heatmaps (JSON import)
+- yield logs over time
 
-All data is stored in your browser (localStorage). Export JSON for backups.
+## Storage modes
 
-## Quick start
+- **Dev (default):** local browser storage with optional API hydration.
+- **Docker/Server:** persistent SQLite database (`/data/pi-tracker.db`) via built-in API, so data is not tied to browser cache.
 
-1. Install Node.js 18+ (or 20+).
-2. In this folder:
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the URL Vite prints (usually http://localhost:5173).
+The dev server runs on `http://localhost:5173`.
 
-## Import
-
-- **Assignments (XLSX)**: expects a sheet named `Assignments` (or `Used`) with columns:
-  `Character, Slot, Region, Constellation, System, Planet, Planet Type, Resource, Active, Notes`
-
-- **Heatmap (JSON)**: expects a JSON file with shape:
-```json
-{
-  "schemaVersion": 1,
-  "kind": "pi-heatmap",
-  "region": "Delve",
-  "scans": [
-    { "Region":"Delve","Constellation":"...","System":"...","Planet":"P1","PlanetType":"...","Resource":"...","Value":0.62 }
-  ]
-}
-```
-
-A sample `public/heatmap-delve.json` is included.
-
-## Build
+## Production build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Simple Unraid / Docker (static hosting)
+## Run with Node (no Docker)
 
-Build locally first (`npm run build`), then serve `dist/`:
+```bash
+npm run build
+npm run start
+```
 
-This repo includes an `nginx.conf` that also proxies `/janice/*` for Janice API calls.
+Server defaults:
+- App URL: `http://localhost:3000`
+- API: `/api/state`
+- DB file: `/data/pi-tracker.db` (set `PI_DB_PATH` to change)
+
+---
+
+## Unraid + Docker deployment (step by step)
+
+Below are two good ways to deploy on Unraid. **Option A (Compose Manager)** is usually easiest.
+
+### Prerequisites
+
+1. Unraid server is running and reachable.
+2. You have a persistent appdata path (example):
+   - `/mnt/user/appdata/pi-tracker`
+3. Docker is enabled in Unraid (`Settings` → `Docker`).
+
+Create the appdata folder if needed:
+
+```bash
+mkdir -p /mnt/user/appdata/pi-tracker
+```
+
+---
+
+### Option A: Unraid Compose Manager (recommended)
+
+1. In Unraid Web UI, open **Docker** → **Compose** (or **Compose Manager** plugin).
+2. Create a new stack named `pi-tracker`.
+3. Use this compose file:
 
 ```yaml
 services:
   pi-tracker:
-    image: nginx:alpine
+    build: /mnt/user/path/to/this/repo
+    container_name: pi-tracker
     ports:
-      - "8080:80"
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - PI_DB_PATH=/data/pi-tracker.db
     volumes:
-      - /mnt/user/appdata/pi-tracker/dist:/usr/share/nginx/html:ro
-      - /mnt/user/appdata/pi-tracker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - /mnt/user/appdata/pi-tracker:/data
     restart: unless-stopped
 ```
 
+4. Deploy the stack.
+5. Wait for the build/start to finish.
+6. Open: `http://<UNRAID-IP>:3000`
+7. Confirm health endpoint works:
+
+```bash
+curl http://<UNRAID-IP>:3000/api/health
+```
+
+Expected response:
+
+```json
+{"ok":true}
+```
+
+8. Your database will persist at:
+   - `/mnt/user/appdata/pi-tracker/pi-tracker.db`
+
+#### Updating later (Compose)
+
+- Pull latest repo changes on Unraid.
+- Re-deploy/rebuild the stack.
+- Your `/data` volume keeps state.
+
+---
+
+### Option B: Unraid Docker template (manual image/container workflow)
+
+If you prefer normal Unraid Docker templates:
+
+1. Build and push an image from another machine (or CI), e.g.:
+   - `yourrepo/pi-tracker:latest`
+2. In Unraid, go to **Docker** → **Add Container**.
+3. Configure:
+   - **Name:** `pi-tracker`
+   - **Repository:** `yourrepo/pi-tracker:latest`
+   - **Network Type:** `bridge`
+4. Add **Port Mapping**:
+   - Container `3000` → Host `3000` (or another host port)
+5. Add **Path Mapping**:
+   - Host Path: `/mnt/user/appdata/pi-tracker`
+   - Container Path: `/data`
+6. Add **Environment Variables**:
+   - `PORT=3000`
+   - `PI_DB_PATH=/data/pi-tracker.db`
+7. Apply and start container.
+8. Open: `http://<UNRAID-IP>:3000`
+
+---
+
+### Option C: Plain docker run (CLI)
+
+If you SSH into Unraid and want direct Docker commands:
+
+```bash
+docker build -t pi-tracker:latest /mnt/user/path/to/this/repo
+
+docker run -d \
+  --name pi-tracker \
+  -p 3000:3000 \
+  -e PORT=3000 \
+  -e PI_DB_PATH=/data/pi-tracker.db \
+  -v /mnt/user/appdata/pi-tracker:/data \
+  --restart unless-stopped \
+  pi-tracker:latest
+```
+
+---
+
+## Backups and migration
+
+- App state is persisted in SQLite at `/data/pi-tracker.db`.
+- Back up the whole `/mnt/user/appdata/pi-tracker` folder.
+- UI import/export JSON still works for manual backups and transfer.
+
+## API endpoints
+
+- `GET /api/health` → `{ ok: true }`
+- `GET /api/state` → current tracker state
+- `PUT /api/state` → save full tracker state JSON
+- `DELETE /api/state` → reset to empty state
+
+## Notes
+
+- `/janice/*` is proxied through the same server in production.
+- If you already used browser-local data, export JSON from the old instance and import it into the new Docker deployment once.
