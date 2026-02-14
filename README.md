@@ -37,10 +37,34 @@ Server defaults:
 - App URL: `http://localhost:3000`
 - API: `/api/state`
 - DB file: `/data/pi-tracker.db` (set `PI_DB_PATH` to change)
+- Optional API auth token: set `PI_API_TOKEN` on server and `VITE_API_TOKEN` in frontend build
 
 ---
 
 ## Unraid + Docker deployment (step by step)
+
+## Quick answer: do I need a separate database first?
+
+**No.** You do **not** run Postgres/MySQL/SQLite separately.
+
+The container includes everything and creates/uses a local SQLite file automatically.
+You only need to map a persistent host folder to `/data`.
+
+- Inside container: `PI_DB_PATH=/data/pi-tracker.db`
+- On Unraid host (example): `/mnt/user/appdata/pi-tracker/pi-tracker.db`
+
+So this mapping:
+
+- Host path: `/mnt/user/appdata/pi-tracker`
+- Container path: `/data`
+
+means the DB file will appear on the host at:
+
+`/mnt/user/appdata/pi-tracker/pi-tracker.db`
+
+---
+
+Below are two good ways to deploy on Unraid. **Option A (Compose Manager)** is usually easiest.
 
 Below are two good ways to deploy on Unraid. **Option A (Compose Manager)** is usually easiest.
 
@@ -74,6 +98,9 @@ services:
       - "3000:3000"
     environment:
       - PORT=3000
+      - PI_DB_PATH=/data/pi-tracker.db  # inside container path
+      # Optional: protect /api/* with token auth
+      # - PI_API_TOKEN=change-me
       - PI_DB_PATH=/data/pi-tracker.db
     volumes:
       - /mnt/user/appdata/pi-tracker:/data
@@ -124,6 +151,7 @@ If you prefer normal Unraid Docker templates:
    - Container Path: `/data`
 6. Add **Environment Variables**:
    - `PORT=3000`
+   - `PI_DB_PATH=/data/pi-tracker.db`  ← this is the **container** path, not host path
    - `PI_DB_PATH=/data/pi-tracker.db`
 7. Apply and start container.
 8. Open: `http://<UNRAID-IP>:3000`
@@ -142,6 +170,7 @@ docker run -d \
   -p 3000:3000 \
   -e PORT=3000 \
   -e PI_DB_PATH=/data/pi-tracker.db \
+  # Optional: -e PI_API_TOKEN=change-me \
   -v /mnt/user/appdata/pi-tracker:/data \
   --restart unless-stopped \
   pi-tracker:latest
@@ -161,6 +190,24 @@ docker run -d \
 - `GET /api/state` → current tracker state
 - `PUT /api/state` → save full tracker state JSON
 - `DELETE /api/state` → reset to empty state
+
+
+## Security notes and dependency posture
+
+- `xlsx` currently has published advisories with no upstream fix available at this time.
+- Mitigations in this repo:
+  - XLSX import size and row limits
+  - Heatmap JSON size and row limits
+  - API request body size limit on the Node server
+  - Optional token auth for `/api/*` via `PI_API_TOKEN`
+- Operational recommendation: only import trusted XLSX files; use JSON export backups regularly.
+
+For private/LAN-only use this is typically acceptable, but keep dependencies updated and re-run:
+
+```bash
+npm audit
+npm audit --omit=dev
+```
 
 ## Notes
 

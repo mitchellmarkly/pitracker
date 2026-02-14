@@ -1,4 +1,5 @@
 import { createServer } from "node:http";
+import { existsSync, createReadStream, mkdirSync } from "node:fs";
 import { readFileSync, existsSync, createReadStream, mkdirSync } from "node:fs";
 import { extname, join, normalize } from "node:path";
 import { DatabaseSync } from "node:sqlite";
@@ -6,6 +7,9 @@ import { DatabaseSync } from "node:sqlite";
 const PORT = Number(process.env.PORT || 3000);
 const STATIC_DIR = process.env.STATIC_DIR || "dist";
 const DB_PATH = process.env.PI_DB_PATH || "/data/pi-tracker.db";
+const API_TOKEN = (process.env.PI_API_TOKEN || "").trim();
+const BODY_LIMIT_BYTES = Number(process.env.PI_BODY_LIMIT_BYTES || 1_048_576); // 1 MiB default
+const JANICE_TIMEOUT_MS = Number(process.env.JANICE_TIMEOUT_MS || 15_000);
 
 mkdirSync("/data", { recursive: true });
 const db = new DatabaseSync(DB_PATH);
@@ -23,11 +27,34 @@ if (!row) {
   db.prepare("INSERT INTO app_state (id, state_json, updated_at) VALUES (1, ?, datetime('now'))").run(defaultState);
 }
 
+function writeSecurityHeaders(res) {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("Referrer-Policy", "no-referrer");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("Cross-Origin-Resource-Policy", "same-origin");
+}
+
+function sendJson(res, code, body) {
+  writeSecurityHeaders(res);
 function sendJson(res, code, body) {
   res.writeHead(code, { "Content-Type": "application/json; charset=utf-8" });
   res.end(JSON.stringify(body));
 }
 
+async function readBody(req, limitBytes = BODY_LIMIT_BYTES) {
+  const chunks = [];
+  let total = 0;
+  for await (const chunk of req) {
+    const buf = Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk);
+    total += buf.length;
+    if (total > limitBytes) {
+      const err = new Error(`Request body too large (limit ${limitBytes} bytes)`);
+      err.name = "PayloadTooLargeError";
+      throw err;
+    }
+    chunks.push(buf);
+  }
+  return Buffer.concat(chunks).toString("utf8");
 async function readBody(req) {
   let body = "";
   for await (const chunk of req) body += chunk.toString();
@@ -46,6 +73,30 @@ function getContentType(filePath) {
   return "application/octet-stream";
 }
 
+function parseJsonOrNull(raw) {
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function hasValidApiToken(req) {
+  if (!API_TOKEN) return true;
+  const fromHeader = (req.headers["x-api-token"] || "").toString().trim();
+  const fromBearer = (req.headers.authorization || "").toString().replace(/^Bearer\s+/i, "").trim();
+  return fromHeader === API_TOKEN || fromBearer === API_TOKEN;
+}
+
+async function proxyJanice(req, res, path) {
+  const upstream = `https://janice.e-351.com${path.replace(/^\/janice/, "")}`;
+  const headers = new Headers();
+  const passThroughHeaders = ["x-apikey", "content-type", "accept"];
+  for (const key of passThroughHeaders) {
+    const v = req.headers[key];
+    if (Array.isArray(v)) headers.set(key, v.join(", "));
+    else if (typeof v === "string" && v.trim()) headers.set(key, v);
+  }
 async function proxyJanice(req, res, path) {
   const upstream = `https://janice.e-351.com${path.replace(/^\/janice/, "")}`;
   const headers = new Headers();
@@ -58,6 +109,28 @@ async function proxyJanice(req, res, path) {
   const method = req.method || "GET";
   const body = method === "GET" || method === "HEAD" ? undefined : await readBody(req);
 
+  const ac = new AbortController();
+  const to = setTimeout(() => ac.abort(), JANICE_TIMEOUT_MS);
+  let upstreamRes;
+  try {
+    upstreamRes = await fetch(upstream, { method, headers, body, signal: ac.signal });
+  } finally {
+    clearTimeout(to);
+  }
+
+  const buf = Buffer.from(await upstreamRes.arrayBuffer());
+
+  // Node fetch may transparently decompress upstream responses. If we forward the
+  // original content-encoding/content-length headers unchanged, browsers can fail
+  // decoding with ERR_CONTENT_DECODING_FAILED.
+  const outHeaders = Object.fromEntries(upstreamRes.headers.entries());
+  delete outHeaders["content-encoding"];
+  delete outHeaders["content-length"];
+  delete outHeaders["transfer-encoding"];
+  outHeaders["content-length"] = String(buf.length);
+
+  writeSecurityHeaders(res);
+  res.writeHead(upstreamRes.status, outHeaders);
   const upstreamRes = await fetch(upstream, { method, headers, body });
   const outHeaders = Object.fromEntries(upstreamRes.headers.entries());
   res.writeHead(upstreamRes.status, outHeaders);
@@ -80,6 +153,11 @@ const server = createServer(async (req, res) => {
       return;
     }
 
+    if (url.pathname.startsWith("/api/") && !hasValidApiToken(req)) {
+      sendJson(res, 401, { error: "Unauthorized" });
+      return;
+    }
+
     if (url.pathname === "/api/state" && method === "GET") {
       const row = db.prepare("SELECT state_json, updated_at FROM app_state WHERE id = 1").get();
       const state = row ? JSON.parse(row.state_json) : JSON.parse(defaultState);
@@ -89,6 +167,7 @@ const server = createServer(async (req, res) => {
 
     if (url.pathname === "/api/state" && method === "PUT") {
       const raw = await readBody(req);
+      const parsed = parseJsonOrNull(raw || "{}");
       const parsed = JSON.parse(raw || "{}");
       if (!parsed || typeof parsed !== "object") {
         sendJson(res, 400, { error: "Invalid state payload" });
@@ -116,6 +195,14 @@ const server = createServer(async (req, res) => {
       return;
     }
 
+    writeSecurityHeaders(res);
+    res.writeHead(200, { "Content-Type": getContentType(filePath) });
+    createReadStream(filePath).pipe(res);
+  } catch (err) {
+    if (err && typeof err === "object" && err.name === "PayloadTooLargeError") {
+      sendJson(res, 413, { error: "Payload too large" });
+      return;
+    }
     res.writeHead(200, { "Content-Type": getContentType(filePath) });
     createReadStream(filePath).pipe(res);
   } catch (err) {
@@ -126,4 +213,5 @@ const server = createServer(async (req, res) => {
 server.listen(PORT, () => {
   console.log(`PI Tracker listening on ${PORT}`);
   console.log(`DB path: ${DB_PATH}`);
+  if (API_TOKEN) console.log("API token auth: enabled");
 });
