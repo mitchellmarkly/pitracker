@@ -1,27 +1,19 @@
 {
   "name": "pi-tracker",
   "private": true,
-  "version": "0.1.0",
-  "type": "module",
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -p tsconfig.json && vite build",
-    "preview": "vite preview",
-    "lint": "echo \"(optional) add eslint\"",
-    "test": "tsc -p tsconfig.test.json && node tools/fix-test-imports.mjs && node .test-dist/tests/run-tests.js",
-    "start": "node server/index.mjs"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "xlsx": "^0.18.5",
-    "lucide-react": "^0.436.0"
+    "dev": "npm run dev -w @pi-tracker/api & npm run dev -w @pi-tracker/web",
+    "build": "npm run build -w @pi-tracker/shared && npm run build -w @pi-tracker/api && npm run build -w @pi-tracker/web",
+    "test": "npm run test -w @pi-tracker/api",
+    "lint": "npm run lint -w @pi-tracker/api && npm run lint -w @pi-tracker/web",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "typescript": "^5.5.4",
-    "vite": "^5.4.2",
-    "@vitejs/plugin-react": "^4.3.1"
+    "prettier": "^3.3.3"
   }
 }
