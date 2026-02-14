@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -p tsconfig.json && vite build",
     "preview": "vite preview",
-    "lint": "echo \"(optional) add eslint\""
+    "lint": "echo \"(optional) add eslint\"",
+    "test": "tsc -p tsconfig.test.json && node tools/fix-test-imports.mjs && node .test-dist/tests/run-tests.js",
+    "start": "node server/index.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
