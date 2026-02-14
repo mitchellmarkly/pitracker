@@ -1,215 +1,130 @@
-# PI Tracker
+# PI Tracker (MVP)
 
-PI Tracker is a Vite + React app for:
-- character → planet assignments (XLSX import)
-- scan heatmaps (JSON import)
-- yield logs over time
+Production-ready MVP for tracking EVE Online Planetary Industry colonies, scan heatmaps, yields, and market decisions (Jita vs C-N4OD).
 
-## Storage modes
+## Proposed structure (implemented)
 
-- **Dev (default):** local browser storage with optional API hydration.
-- **Docker/Server:** persistent SQLite database (`/data/pi-tracker.db`) via built-in API, so data is not tied to browser cache.
+```text
+.
+├─ apps/
+│  ├─ api/                 # Fastify + Prisma + SQLite API
+│  │  ├─ prisma/           # schema + versioned migrations
+│  │  └─ src/              # routes, import normalizers, market adapters, tests
+│  └─ web/                 # React + TypeScript + Vite + Tailwind UI
+├─ packages/
+│  └─ shared/              # shared Zod schemas + domain logic
+├─ Dockerfile              # single-container deployment (API + static web)
+└─ docker-compose.yml      # Unraid-friendly compose example w/ /data volume
+```
 
-## Local development
+## Features included
+
+- Characters + assignments with slot safety checks.
+- Explorer workflow and “pick from explorer” prefill.
+- Heatmap table with score tint + in-use indicator + export region JSON.
+- Yield tracking with bulk paste parser.
+- Market tab with manual refresh only and decision logic:
+  - `hubB lowest sell > hubA highest buy => Sell in Hub B`, otherwise `Make P2`.
+- Full export/import JSON with validation and transactional DB replace.
+- Heatmap JSON import normalization (`[]` or `{ scans: [] }`).
+- Assignment XLSX import with auto character creation and safe slot merge behavior.
+
+## Setup
 
 ```bash
 npm install
+npm run build
 npm run dev
 ```
 
-The dev server runs on `http://localhost:5173`.
+### API default runtime values
 
-## Production build
+- `PORT=3000`
+- `DATABASE_URL=file:/data/pi-tracker.db`
 
-```bash
-npm run build
-npm run preview
-```
+## Docker / Unraid quickstart
 
-## Run with Node (no Docker)
+### Compose
 
 ```bash
-npm run build
-npm run start
+docker compose up -d --build
 ```
 
-Server defaults:
-- App URL: `http://localhost:3000`
-- API: `/api/state`
-- DB file: `/data/pi-tracker.db` (set `PI_DB_PATH` to change)
-- Optional API auth token: set `PI_API_TOKEN` on server and `VITE_API_TOKEN` in frontend build
+Container exposes `3000` and persists SQLite at:
 
----
+- host: `./data/pi-tracker.db`
+- container: `/data/pi-tracker.db`
 
-## Unraid + Docker deployment (step by step)
+### Unraid notes
 
-## Quick answer: do I need a separate database first?
+- Map an appdata path to container `/data`.
+- Keep `/data/pi-tracker.db` persistent across upgrades.
 
-**No.** You do **not** run Postgres/MySQL/SQLite separately.
+## Import formats
 
-The container includes everything and creates/uses a local SQLite file automatically.
-You only need to map a persistent host folder to `/data`.
+### Export All JSON
 
-- Inside container: `PI_DB_PATH=/data/pi-tracker.db`
-- On Unraid host (example): `/mnt/user/appdata/pi-tracker/pi-tracker.db`
-
-So this mapping:
-
-- Host path: `/mnt/user/appdata/pi-tracker`
-- Container path: `/data`
-
-means the DB file will appear on the host at:
-
-`/mnt/user/appdata/pi-tracker/pi-tracker.db`
-
----
-
-Below are two good ways to deploy on Unraid. **Option A (Compose Manager)** is usually easiest.
-
-Below are two good ways to deploy on Unraid. **Option A (Compose Manager)** is usually easiest.
-
-### Prerequisites
-
-1. Unraid server is running and reachable.
-2. You have a persistent appdata path (example):
-   - `/mnt/user/appdata/pi-tracker`
-3. Docker is enabled in Unraid (`Settings` → `Docker`).
-
-Create the appdata folder if needed:
-
-```bash
-mkdir -p /mnt/user/appdata/pi-tracker
-```
-
----
-
-### Option A: Unraid Compose Manager (recommended)
-
-1. In Unraid Web UI, open **Docker** → **Compose** (or **Compose Manager** plugin).
-2. Create a new stack named `pi-tracker`.
-3. Use this compose file:
-
-```yaml
-services:
-  pi-tracker:
-    build: /mnt/user/path/to/this/repo
-    container_name: pi-tracker
-    ports:
-      - "3000:3000"
-    environment:
-      - PORT=3000
-      - PI_DB_PATH=/data/pi-tracker.db  # inside container path
-      # Optional: protect /api/* with token auth
-      # - PI_API_TOKEN=change-me
-      - PI_DB_PATH=/data/pi-tracker.db
-    volumes:
-      - /mnt/user/appdata/pi-tracker:/data
-    restart: unless-stopped
-```
-
-4. Deploy the stack.
-5. Wait for the build/start to finish.
-6. Open: `http://<UNRAID-IP>:3000`
-7. Confirm health endpoint works:
-
-```bash
-curl http://<UNRAID-IP>:3000/api/health
-```
-
-Expected response:
+`GET /api/export` returns:
 
 ```json
-{"ok":true}
+{
+  "version": 1,
+  "characters": [],
+  "assignments": [],
+  "scans": [],
+  "yields": [],
+  "marketSettings": {}
+}
 ```
 
-8. Your database will persist at:
-   - `/mnt/user/appdata/pi-tracker/pi-tracker.db`
+### Import All JSON
 
-#### Updating later (Compose)
+`POST /api/import/replace` with the same shape. Import is validated + all-or-nothing transaction.
 
-- Pull latest repo changes on Unraid.
-- Re-deploy/rebuild the stack.
-- Your `/data` volume keeps state.
+### Import Assignments XLSX
 
----
+`POST /api/import/assignments-xlsx` as base64 workbook of rows:
 
-### Option B: Unraid Docker template (manual image/container workflow)
+- `character, slot, region, constellation, system, planet, planetType, resource`
 
-If you prefer normal Unraid Docker templates:
+### Import Heatmap JSON
 
-1. Build and push an image from another machine (or CI), e.g.:
-   - `yourrepo/pi-tracker:latest`
-2. In Unraid, go to **Docker** → **Add Container**.
-3. Configure:
-   - **Name:** `pi-tracker`
-   - **Repository:** `yourrepo/pi-tracker:latest`
-   - **Network Type:** `bridge`
-4. Add **Port Mapping**:
-   - Container `3000` → Host `3000` (or another host port)
-5. Add **Path Mapping**:
-   - Host Path: `/mnt/user/appdata/pi-tracker`
-   - Container Path: `/data`
-6. Add **Environment Variables**:
-   - `PORT=3000`
-   - `PI_DB_PATH=/data/pi-tracker.db`  ← this is the **container** path, not host path
-   - `PI_DB_PATH=/data/pi-tracker.db`
-7. Apply and start container.
-8. Open: `http://<UNRAID-IP>:3000`
+`POST /api/scans/import-heatmap` accepts either:
 
----
+- `[scan, scan, ...]`
+- `{ "scans": [scan, scan, ...] }`
 
-### Option C: Plain docker run (CLI)
+## Market limitations
 
-If you SSH into Unraid and want direct Docker commands:
+- ESI adapter in MVP uses public-only style adapter surface (no OAuth).
+- Structure visibility may limit market completeness for some regions in real ESI usage.
+- Janice adapter is key-based in interface and can be extended to real upstream calls.
 
-```bash
-docker build -t pi-tracker:latest /mnt/user/path/to/this/repo
+## Backups / restore
 
-docker run -d \
-  --name pi-tracker \
-  -p 3000:3000 \
-  -e PORT=3000 \
-  -e PI_DB_PATH=/data/pi-tracker.db \
-  # Optional: -e PI_API_TOKEN=change-me \
-  -v /mnt/user/appdata/pi-tracker:/data \
-  --restart unless-stopped \
-  pi-tracker:latest
-```
+1. Use `GET /api/export` for logical backup.
+2. Copy `/data/pi-tracker.db` for full physical backup.
+3. Restore by replacing DB file or posting backup JSON to `/api/import/replace`.
 
----
+## Testing
 
-## Backups and migration
+Core domain tests live in `apps/api/src/core.test.ts` and cover:
 
-- App state is persisted in SQLite at `/data/pi-tracker.db`.
-- Back up the whole `/mnt/user/appdata/pi-tracker` folder.
-- UI import/export JSON still works for manual backups and transfer.
+- next-open-slot
+- duplicate prevention
+- yield parser
+- import normalization/migration-path parsing
 
-## API endpoints
+## Known limitations
 
-- `GET /api/health` → `{ ok: true }`
-- `GET /api/state` → current tracker state
-- `PUT /api/state` → save full tracker state JSON
-- `DELETE /api/state` → reset to empty state
+- Market providers are scaffolded adapters with deterministic mock pricing in MVP.
+- UI is intentionally lean and optimized for simple deployment.
+- Import/export controls in UI are minimal and API-first.
 
+## What changed (short changelog)
 
-## Security notes and dependency posture
-
-- `xlsx` currently has published advisories with no upstream fix available at this time.
-- Mitigations in this repo:
-  - XLSX import size and row limits
-  - Heatmap JSON size and row limits
-  - API request body size limit on the Node server
-  - Optional token auth for `/api/*` via `PI_API_TOKEN`
-- Operational recommendation: only import trusted XLSX files; use JSON export backups regularly.
-
-For private/LAN-only use this is typically acceptable, but keep dependencies updated and re-run:
-
-```bash
-npm audit
-npm audit --omit=dev
-```
-
-## Notes
-
-- `/janice/*` is proxied through the same server in production.
-- If you already used browser-local data, export JSON from the old instance and import it into the new Docker deployment once.
+- Rebuilt project into monorepo (`apps/api`, `apps/web`, `packages/shared`).
+- Added Prisma+SQLite backend with migration + transactional import/replace.
+- Added React/Tailwind dark UI with required tabs and flows.
+- Added shared Zod schemas and tested core logic with Vitest.
+- Added single-container Docker deployment with persistent `/data` volume path.

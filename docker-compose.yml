@@ -1,12 +1,11 @@
+version: '3.8'
 services:
   pi-tracker:
     build: .
-    container_name: pi-tracker
     ports:
       - "3000:3000"
     environment:
+      - DATABASE_URL=file:/data/pi-tracker.db
       - PORT=3000
-      - PI_DB_PATH=/data/pi-tracker.db
     volumes:
       - ./data:/data
-    restart: unless-stopped

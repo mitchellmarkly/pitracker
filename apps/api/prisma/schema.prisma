@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Character {
+  id         String       @id
+  name       String
+  slotsTotal Int
+  active     Boolean      @default(true)
+  assignments Assignment[]
+}
+
+model Assignment {
+  id            String  @id
+  characterId   String
+  slot          Int
+  region        String
+  constellation String
+  system        String
+  planet        String
+  planetType    String
+  resource      String
+  active        Boolean @default(true)
+  notes         String?
+  character     Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+}
+
+model Scan {
+  id            String @id
+  region        String
+  constellation String
+  system        String
+  planet        String
+  planetType    String
+  resource      String
+  value         Float
+}
+
+model Yield {
+  id      String @id
+  date    String
+  product String
+  amount  Float
+  notes   String?
+}
+
+model MarketSettings {
+  id          Int    @id @default(1)
+  source      String @default("esi")
+  hubAName    String @default("Jita")
+  hubBName    String @default("C-N4OD")
+  productLimit Int   @default(50)
+  maxPages    Int    @default(3)
+  janiceApiKey String?
+  rememberKey Boolean @default(false)
+}
