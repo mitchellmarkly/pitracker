@@ -42,27 +42,6 @@ Server defaults:
 
 ## Unraid + Docker deployment (step by step)
 
-## Quick answer: do I need a separate database first?
-
-**No.** You do **not** run Postgres/MySQL/SQLite separately.
-
-The container includes everything and creates/uses a local SQLite file automatically.
-You only need to map a persistent host folder to `/data`.
-
-- Inside container: `PI_DB_PATH=/data/pi-tracker.db`
-- On Unraid host (example): `/mnt/user/appdata/pi-tracker/pi-tracker.db`
-
-So this mapping:
-
-- Host path: `/mnt/user/appdata/pi-tracker`
-- Container path: `/data`
-
-means the DB file will appear on the host at:
-
-`/mnt/user/appdata/pi-tracker/pi-tracker.db`
-
----
-
 Below are two good ways to deploy on Unraid. **Option A (Compose Manager)** is usually easiest.
 
 ### Prerequisites
@@ -95,7 +74,7 @@ services:
       - "3000:3000"
     environment:
       - PORT=3000
-      - PI_DB_PATH=/data/pi-tracker.db  # inside container path
+      - PI_DB_PATH=/data/pi-tracker.db
     volumes:
       - /mnt/user/appdata/pi-tracker:/data
     restart: unless-stopped
@@ -145,7 +124,7 @@ If you prefer normal Unraid Docker templates:
    - Container Path: `/data`
 6. Add **Environment Variables**:
    - `PORT=3000`
-   - `PI_DB_PATH=/data/pi-tracker.db`  ← this is the **container** path, not host path
+   - `PI_DB_PATH=/data/pi-tracker.db`
 7. Apply and start container.
 8. Open: `http://<UNRAID-IP>:3000`
 

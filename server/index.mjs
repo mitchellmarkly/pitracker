@@ -59,18 +59,9 @@ async function proxyJanice(req, res, path) {
   const body = method === "GET" || method === "HEAD" ? undefined : await readBody(req);
 
   const upstreamRes = await fetch(upstream, { method, headers, body });
-  const buf = Buffer.from(await upstreamRes.arrayBuffer());
-
-  // Node fetch may transparently decompress upstream responses. If we forward the
-  // original content-encoding/content-length headers unchanged, browsers can fail
-  // decoding with ERR_CONTENT_DECODING_FAILED.
   const outHeaders = Object.fromEntries(upstreamRes.headers.entries());
-  delete outHeaders["content-encoding"];
-  delete outHeaders["content-length"];
-  delete outHeaders["transfer-encoding"];
-  outHeaders["content-length"] = String(buf.length);
-
   res.writeHead(upstreamRes.status, outHeaders);
+  const buf = Buffer.from(await upstreamRes.arrayBuffer());
   res.end(buf);
 }
 
